@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "wr4th",
+  "version": "${version}",
+  "name": "WR4TH",
+  "description": "WR4TH utility client - a combined module set inspired by Wurst, Doomsday and Meteor.",
+  "authors": ["WR4TH"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["net.wr4th.WR4TH"]
+  },
+  "mixins": [
+    { "config": "wr4th.mixins.json", "environment": "client" }
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
